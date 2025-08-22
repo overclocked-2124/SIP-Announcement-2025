@@ -21,13 +21,13 @@ const announcements = [
     type: "clubs"
   },
   {
-    title: "Bootkit",
+    title: "Coding Resources (Bootkit)",
     date: "22 Aug 2025", 
     driveShare: "https://github.com/codingclubrvce/RVCE-Coding-Bootkit",
     type: "bootkit"
   },
   {
-    title: "Navodaya Invitation",
+    title: "Inaguration Invitation",
     date: "22 Aug 2025", 
     driveShare: "https://drive.google.com/file/d/1nr7u2M4ji0_do5ai4dRGSO0TM_7isOel/view?usp=drive_link",
     type: "schedule"
@@ -41,7 +41,7 @@ const announcements = [
   {
     title: "Key Executives & Councellors.",
     date: "22 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1-GYb2sQ1c5HdRljaRpXLgYzJwMfaoFh_/view?usp=drive_link",
+    driveShare: "https://drive.google.com/file/d/1dGkgwG8B-tIu-EsVpclP7exWNARNH-C6/view?usp=drive_link",
     type: "counselors"
   }
   
