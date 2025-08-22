@@ -37,6 +37,12 @@ const announcements = [
     date: "22 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1bCdyhgxVHRz7ZXdmSe37NzcWo2MEnmCl/view?usp=sharing",
     type: "counselors"
+  },
+  {
+    title: "Key Executives & Councellors.",
+    date: "22 Aug 2025",
+    driveShare: "https://drive.google.com/file/d/1-GYb2sQ1c5HdRljaRpXLgYzJwMfaoFh_/view?usp=drive_link",
+    type: "counselors"
   }
   
 ];
