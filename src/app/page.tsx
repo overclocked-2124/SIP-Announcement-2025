@@ -10,7 +10,7 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 const announcements = [
   {
     title: "SIP Schedule",
-    date: "21 Aug 2025",
+    date: "22 Aug 2025",
     driveShare: "#",
     type: "schedule"
   },
@@ -22,16 +22,23 @@ const announcements = [
   },
   {
     title: "Bootkit",
-    date: "20 Aug 2025", 
+    date: "22 Aug 2025", 
     driveShare: "https://github.com/codingclubrvce/RVCE-Coding-Bootkit",
     type: "bootkit"
   },
   {
+    title: "Navodaya Invitation",
+    date: "22 Aug 2025", 
+    driveShare: "https://drive.google.com/file/d/1nr7u2M4ji0_do5ai4dRGSO0TM_7isOel/view?usp=drive_link",
+    type: "schedule"
+  },
+  {
     title: "Counselor Details",
-    date: "19 Aug 2025",
+    date: "22 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1bCdyhgxVHRz7ZXdmSe37NzcWo2MEnmCl/view?usp=sharing",
     type: "counselors"
   }
+  
 ];
 
 const iconMap: { [key: string]: React.ReactNode } = {
