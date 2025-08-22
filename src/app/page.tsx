@@ -9,27 +9,15 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
   {
-    title: "SIP Schedule",
-    date: "22 Aug 2025",
-    driveShare: "#",
-    type: "schedule"
-  },
-  {
-    title: "Club Showcasing Day Brochure",
-    date: "22 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1-GYb2sQ1c5HdRljaRpXLgYzJwMfaoFh_/view?usp=sharing",
-    type: "clubs"
-  },
-  {
-    title: "Coding Resources (Bootkit)",
-    date: "22 Aug 2025", 
-    driveShare: "https://github.com/codingclubrvce/RVCE-Coding-Bootkit",
-    type: "bootkit"
-  },
-  {
     title: "Inaguration Invitation",
     date: "22 Aug 2025", 
     driveShare: "https://drive.google.com/file/d/1nr7u2M4ji0_do5ai4dRGSO0TM_7isOel/view?usp=drive_link",
+    type: "schedule"
+  },
+  {
+    title: "SIP Schedule",
+    date: "22 Aug 2025",
+    driveShare: "#",
     type: "schedule"
   },
   {
@@ -43,6 +31,18 @@ const announcements = [
     date: "22 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1dGkgwG8B-tIu-EsVpclP7exWNARNH-C6/view?usp=drive_link",
     type: "counselors"
+  },
+  {
+    title: "Club Showcasing Day Brochure",
+    date: "22 Aug 2025",
+    driveShare: "https://drive.google.com/file/d/1-GYb2sQ1c5HdRljaRpXLgYzJwMfaoFh_/view?usp=sharing",
+    type: "clubs"
+  },
+  {
+    title: "Coding Resources (Bootkit)",
+    date: "22 Aug 2025", 
+    driveShare: "https://github.com/codingclubrvce/RVCE-Coding-Bootkit",
+    type: "bootkit"
   }
   
 ];
