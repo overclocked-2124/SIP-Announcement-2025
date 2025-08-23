@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   themeColor: '#ED5E4A',
   viewport: 'width=device-width, initial-scale=1',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/RVCE_Logo.png',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
