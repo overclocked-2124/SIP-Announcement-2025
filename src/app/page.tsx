@@ -35,7 +35,7 @@ const announcements = [
   {
     title: "Club Showcasing Day Brochure",
     date: "22 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1-GYb2sQ1c5HdRljaRpXLgYzJwMfaoFh_/view?usp=sharing",
+    driveShare: "https://drive.google.com/file/d/106w2fXB3x3961LfGBTvww39BsEGuMx6P/view?usp=sharing",
     type: "clubs"
   },
   {
