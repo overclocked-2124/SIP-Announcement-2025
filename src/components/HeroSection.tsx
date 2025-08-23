@@ -25,12 +25,12 @@ const HeroSection: React.FC = () => {
             View Announcements
           </Button>
           <Button 
-            size="large" 
-            variant="secondary"
-            onClick={() => {}}
-          >
-            SIP Schedule
-          </Button>
+    size="large" 
+    variant="secondary"
+    href="https://drive.google.com/file/d/1nRcImEmeSDnsgJQXiPyDFgCI6ja34y7C/view?usp=drive_link"
+>
+    SIP Schedule
+</Button>
         </div>
       </div>
     </section>
