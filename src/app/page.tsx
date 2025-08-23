@@ -3,11 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FileText, Book, Users, Building, Star, Download, ArrowRight, Menu, X } from 'lucide-react';
+import { FileText, Book, Users, Building, Star, ArrowRight, Menu, X, Youtube } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
+  {
+    title: "Inauguration Live Stream",
+    date: "24 Aug 2025",
+    driveShare: "https://youtube.com/live/PQnMxT_ILpI?feature=share",
+    type: "livestream"
+  },
   {
     title: "Inaguration Invitation",
     date: "22 Aug 2025", 
@@ -55,6 +61,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   counselors: <Users className="w-8 h-8 text-primary" />,
   venues: <Building className="w-8 h-8 text-primary" />,
   clubs: <Star className="w-8 h-8 text-primary" />,
+  livestream: <Youtube className="w-8 h-8 text-primary" />,
 }
 
 const Header = () => {
@@ -129,7 +136,7 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
             rel="noopener noreferrer"
             className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg transform hover:-translate-y-0.5"
           >
-            {announcement.type === 'bootkit' ? 'View Online' : 'View'}
+            {announcement.type === 'livestream' ? 'Watch Live' : announcement.type === 'bootkit' ? 'View Online' : 'View'}
             <ArrowRight className="w-5 h-5 ml-2" />
           </a>
         )}
