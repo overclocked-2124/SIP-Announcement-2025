@@ -161,13 +161,23 @@
   )
 
   const Footer = () => (
-    <footer className="bg-gray-800 text-white py-12">
-      <div className="container mx-auto px-4 text-center">
-        <p>&copy; 2025 RVCE, Bengaluru. All Rights Reserved.</p>
-        <p className="mt-2 text-gray-400">Student Induction Programme (SIP) Announcements</p>
+  <footer className="bg-gray-800 text-white py-12">
+    <div className="container mx-auto flex flex-col items-center gap-6 px-4 text-center md:flex-row md:justify-between md:text-left">
+      <Image 
+        src="/CCLogo_BG_Removed.png"
+        alt="Coding Club Logo"
+        width={180}
+        height={50}
+        priority
+      />
+      <div>
+        <p className="font-semibold">&copy; 2025 RVCE, Bengaluru. All Rights Reserved.</p>
+        <p className="mt-1 text-gray-400">Student Induction Programme (SIP) Announcements</p>
+        <p className="mt-1 text-gray-400">Maintained by Coding Club, RVCE</p>
       </div>
-    </footer>
-  )
+    </div>
+  </footer>
+);
 
   export default function Home() {
     const [showDisclaimer, setShowDisclaimer] = useState(false);
