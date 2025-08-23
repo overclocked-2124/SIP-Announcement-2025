@@ -17,7 +17,7 @@ const announcements = [
   {
     title: "SIP Schedule",
     date: "22 Aug 2025",
-    driveShare: "#",
+    driveShare: "https://drive.google.com/file/d/1nRcImEmeSDnsgJQXiPyDFgCI6ja34y7C/view?usp=drive_link",
     type: "schedule"
   },
   {
