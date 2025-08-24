@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           <Button 
     size="large" 
     variant="secondary"
-    href="https://drive.google.com/file/d/1IV2Lf7t2-d7W8CYja83ZyR_N2AQtA2Y4/view?usp=drive_link"
+    href="https://drive.google.com/file/d/1CSvyvfaCF-IgHO1uAN0cGoqMJxftSBsw/view?usp=sharing"
 >
     SIP Schedule
 </Button>
