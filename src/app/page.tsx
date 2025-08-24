@@ -22,8 +22,8 @@ const announcements = [
   },
   {
     title: "SIP Schedule",
-    date: "22 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1nRcImEmeSDnsgJQXiPyDFgCI6ja34y7C/view?usp=drive_link",
+    date: "24 Aug 2025",
+    driveShare: "https://drive.google.com/file/d/1IV2Lf7t2-d7W8CYja83ZyR_N2AQtA2Y4/view?usp=drive_link",
     type: "schedule"
   },
   {
