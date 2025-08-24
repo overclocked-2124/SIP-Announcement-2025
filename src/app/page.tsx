@@ -9,18 +9,6 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
   {
-    title: "Inauguration Live Stream",
-    date: "24 Aug 2025",
-    driveShare: "https://youtube.com/live/PQnMxT_ILpI?feature=share",
-    type: "livestream"
-  },
-  {
-    title: "Inaguration Invitation",
-    date: "22 Aug 2025", 
-    driveShare: "https://drive.google.com/file/d/1nr7u2M4ji0_do5ai4dRGSO0TM_7isOel/view?usp=drive_link",
-    type: "schedule"
-  },
-  {
     title: "SIP Schedule",
     date: "24 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1CSvyvfaCF-IgHO1uAN0cGoqMJxftSBsw/view?usp=sharing",
