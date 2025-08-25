@@ -11,7 +11,7 @@ const announcements = [
   {
     title: "Day-1 Event-1 Attendance Link",
     date: "25 Aug 2025",
-    driveShare: "https://attendance.rvcesip2025.org/event/jvY1Fdq0apHt06enyTyu",
+    driveShare: "",
     type: "clubs"
   },
   {
