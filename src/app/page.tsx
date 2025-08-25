@@ -9,9 +9,9 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
   {
-    title: "Day-1 Event-1 Attendance Link",
+    title: "Day-1 Event-2 Attendance Link",
     date: "25 Aug 2025",
-    driveShare: "",
+    driveShare: "https://attendance.rvcesip2025.org/event/NRNhktbfn0OMMK9cxdmI",
     type: "clubs"
   },
   {
