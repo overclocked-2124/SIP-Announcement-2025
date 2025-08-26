@@ -9,6 +9,13 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
   {
+    title: "Club Showcasing Day Instructions",
+    date: "23 Aug 2025",
+    driveShare: "https://drive.google.com/file/d/17yD6W8r8Nj7lZfYwbuSHn2z56WLu-TFu/view?usp=drive_link",
+    route: "/club-showcase-day-instructions",
+    type: "clubs"
+  },
+  {
     title: "Student Induction Programme Schedule",
     date: "26 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1CSvyvfaCF-IgHO1uAN0cGoqMJxftSBsw/view?usp=drive_link",
@@ -71,6 +78,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6 text-gray-600 font-medium">
           <Link href="#" className="hover:text-primary transition-colors">Home</Link>
           <Link href="#announcements" className="hover:text-primary transition-colors">Announcements</Link>
+          <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors">Club Showcase Day</Link>
         </nav>
         
         <button 
@@ -88,6 +96,7 @@ const Header = () => {
           <nav className="flex flex-col items-center gap-4 text-gray-600 font-medium py-4">
             <Link href="#" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="#announcements" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Announcements</Link>
+            <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Club Showcase Day</Link>
           </nav>
         </div>
       )}
@@ -110,13 +119,21 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
       </div>
       <h3 className="text-xl font-bold text-gray-800 flex-grow">{announcement.title}</h3>
       <div className="mt-6 flex items-center gap-3 pt-4 border-t border-gray-100">
-        {announcement.driveShare === "#" ? (
+        {announcement.driveShare === "#" && !('route' in announcement) ? (
           <button
             disabled
             className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-gray-300 text-gray-500 font-semibold rounded-lg cursor-not-allowed"
           >
             Coming Soon
           </button>
+        ) : announcement && (announcement as any).route ? (
+          <Link
+            href={(announcement as any).route}
+            className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            View
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </Link>
         ) : (
           <a
             href={announcement.driveShare}
