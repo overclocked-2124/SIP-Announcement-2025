@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Menu, X } from 'lucide-r
 export default function ClubShowcaseInstructionsPage() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const brochureUrl = 'https://drive.google.com/file/d/17yD6W8r8Nj7lZfYwbuSHn2z56WLu-TFu/view?usp=drive_link';
+  const brochureUrl = 'https://drive.google.com/file/d/1CLKElnqbptFEx596ZVIeLU4uEWabT6_s/view?usp=sharing';
   const socialsUrl = '#'; // TODO: Replace with clubs social handles link
 
   return (
@@ -141,17 +141,19 @@ export default function ClubShowcaseInstructionsPage() {
                     View Club Showcasing Day Brochure
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </a>
-
-                  <a
-                    href={socialsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-4 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-sm hover:shadow-lg"
-                  >
-                    Clubs Social Handles
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </a>
+                  {socialsUrl !== '#' && (
+                    <a
+                      href={socialsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-sm hover:shadow-lg"
+                    >
+                      Clubs Social Handles
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </a>
+                  )}
                 </div>
+                <p className="mt-4 text-sm text-gray-500">Clubs social handles will be added shortly.</p>
               </div>
             </div>
           </div>
