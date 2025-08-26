@@ -9,6 +9,12 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
   {
+    title: "Venue for 2nd session - 26-08-2025",
+    date: "26 Aug 2025",
+    driveShare: "https://drive.google.com/file/d/1zUKvD9olmn5NyezLOIJWrThtFU71MOQc/view?usp=sharing",
+    type: "schedule"
+  },
+  {
     title: "SIP Schedule",
     date: "24 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1CSvyvfaCF-IgHO1uAN0cGoqMJxftSBsw/view?usp=sharing",
