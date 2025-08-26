@@ -15,7 +15,7 @@ const announcements = [
     type: "schedule"
   },
   {
-    title: "SIP Schedule",
+    title: "Student Induction Programme Schedule",
     date: "24 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1CSvyvfaCF-IgHO1uAN0cGoqMJxftSBsw/view?usp=sharing",
     type: "schedule"
@@ -143,8 +143,8 @@ const Announcements = () => (
   <section id="announcements" className="py-20 sm:py-32 bg-white">
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900">Student Induction Programme 2025</h2>
-        <p className="text-lg text-gray-600 mt-2">Stay up-to-date with the latest updates.</p>
+        <h2 className="text-4xl font-bold text-gray-900">Welcome 2025-29 batch of students</h2>
+        <p className="text-lg text-gray-600 mt-2">Student Induction Programme 2025</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {announcements.map((announcement) => (
