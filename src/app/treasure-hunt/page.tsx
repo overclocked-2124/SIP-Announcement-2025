@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Menu, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, MapPinned, CheckCircle2, Menu, X } from 'lucide-react';
 
-export default function ClubShowcaseInstructionsPage() {
+export default function TreasureHuntPage() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const brochureUrl = 'https://drive.google.com/file/d/1CLKElnqbptFEx596ZVIeLU4uEWabT6_s/view?usp=sharing';
-  const socialsUrl = '#'; // TODO: Replace with clubs social handles link
+  const brochureUrl = '#';
+  const socialsUrl = '#';
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -64,8 +64,8 @@ export default function ClubShowcaseInstructionsPage() {
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
           </Link>
           <div className="mt-6 sm:mt-8">
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Club Showcasing Day Instructions</h1>
-            <p className="mt-3 text-gray-600 max-w-2xl">Please read these instructions carefully before attending the Club Showcasing Day. Follow the guidelines to ensure a smooth and engaging experience.</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Treasure Hunt</h1>
+            <p className="mt-3 text-gray-600 max-w-2xl">Details, instructions, and links for the Treasure Hunt will be published here. Stay tuned.</p>
           </div>
         </div>
       </section>
@@ -79,54 +79,18 @@ export default function ClubShowcaseInstructionsPage() {
               <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="bg-primary/10 p-2 rounded-lg">
-                    <BookOpen className="w-6 h-6 text-primary" />
+                    <MapPinned className="w-6 h-6 text-primary" />
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900">Instructions</h2>
                 </div>
 
                 <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
-                    <span className="text-gray-700 leading-relaxed">
-                      Be on campus by <strong>8:50 AM</strong> and <strong>report to your usual SIP venues</strong>.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
-                    <span className="text-gray-700 leading-relaxed">
-                      <strong>Orientation</strong> will be <strong>livestreamed from IEM Hall</strong> from <strong>9:00 AM – 10:45 AM</strong>.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
-                    <span className="text-gray-700 leading-relaxed">
-                      <strong>Event bookings</strong> open from <strong>10:45 AM – 11:00 AM</strong>. You can <strong>book only once</strong> — choose carefully.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
-                    <span className="text-gray-700 leading-relaxed">
-                      Once booked, <strong>tickets are generated</strong>. Show these <strong>tickets at the club venues</strong> so they can be <strong>scanned</strong> and your <strong>attendance</strong> recorded.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
-                    <span className="text-gray-700 leading-relaxed">
-                      Attending <strong>4 events is mandatory</strong> and <strong>attendance will be taken seriously</strong>.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
-                    <span className="text-gray-700 leading-relaxed">
-                      Each event is limited to <strong>70 people</strong> — strictly <strong>first-come, first-served</strong>.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
-                    <span className="text-gray-700 leading-relaxed">
-                      You are <strong>strongly advised</strong> to go through the <strong>complete brochure</strong> and the <strong>social media handles</strong> of all clubs to decide which events to attend.
-                    </span>
-                  </li>
+                  {["Instructions will be added soon."].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
+                      <span className="text-gray-700 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -136,15 +100,18 @@ export default function ClubShowcaseInstructionsPage() {
               <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-6 sm:p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Links</h3>
                 <div className="flex flex-col gap-3">
-                  <a
-                    href={brochureUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg"
-                  >
-                    View Club Showcasing Day Brochure
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </a>
+                  {brochureUrl !== '#' && (
+                    <a
+                      href={brochureUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg"
+                    >
+                      View Brochure
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </a>
+                  )}
+
                   {socialsUrl !== '#' && (
                     <a
                       href={socialsUrl}
@@ -152,12 +119,12 @@ export default function ClubShowcaseInstructionsPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-4 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-sm hover:shadow-lg"
                     >
-                      Clubs Social Handles
+                      Social Handles
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </a>
                   )}
                 </div>
-                <p className="mt-4 text-sm text-gray-500">Clubs social handles will be added shortly.</p>
+                <p className="mt-4 text-sm text-gray-500">Quick links will be added soon.</p>
               </div>
             </div>
           </div>
