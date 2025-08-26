@@ -30,7 +30,7 @@ export default function TeamBuildingActivitiesPage() {
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <Link href="/#announcements" className="hover:text-primary transition-colors">Announcements</Link>
             <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors">Club Showcase Day</Link>
-            <Link href="/treasure-hunt" className="hover:text-primary transition-colors">Treasure Hunt</Link>
+            <Link href="/treasure-hunt" className="hover:text-primary transition-colors">Surprise</Link>
             <Link href="/team-building-activities" className="hover:text-primary transition-colors">Team Building Activities</Link>
           </nav>
 
@@ -50,7 +50,7 @@ export default function TeamBuildingActivitiesPage() {
               <Link href="/" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
               <Link href="/#announcements" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Announcements</Link>
               <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Club Showcase Day</Link>
-              <Link href="/treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Treasure Hunt</Link>
+              <Link href="/treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Surprise</Link>
               <Link href="/team-building-activities" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Team Building Activities</Link>
             </nav>
           </div>

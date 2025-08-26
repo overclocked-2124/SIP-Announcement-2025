@@ -9,7 +9,7 @@ export default function ClubShowcaseInstructionsPage() {
   const [isOpen, setIsOpen] = useState(false);
 
   const brochureUrl = 'https://drive.google.com/file/d/1CLKElnqbptFEx596ZVIeLU4uEWabT6_s/view?usp=sharing';
-  const socialsUrl = '#'; // TODO: Replace with clubs social handles link
+  const socialsUrl = 'https://drive.google.com/file/d/18Qghv5FivmSgN-DWjn7TjHqhB5vPQP0q/view?usp=drive_link';
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -30,7 +30,7 @@ export default function ClubShowcaseInstructionsPage() {
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <Link href="/#announcements" className="hover:text-primary transition-colors">Announcements</Link>
             <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors">Club Showcase Day</Link>
-            <Link href="/treasure-hunt" className="hover:text-primary transition-colors">Treasure Hunt</Link>
+            <Link href="/treasure-hunt" className="hover:text-primary transition-colors">Surprise</Link>
             <Link href="/team-building-activities" className="hover:text-primary transition-colors">Team Building Activities</Link>
           </nav>
 
@@ -50,7 +50,7 @@ export default function ClubShowcaseInstructionsPage() {
               <Link href="/" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
               <Link href="/#announcements" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Announcements</Link>
               <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Club Showcase Day</Link>
-              <Link href="/treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Treasure Hunt</Link>
+              <Link href="/treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Surprise</Link>
               <Link href="/team-building-activities" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Team Building Activities</Link>
             </nav>
           </div>
@@ -145,17 +145,15 @@ export default function ClubShowcaseInstructionsPage() {
                     View Club Showcasing Day Brochure
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </a>
-                  {socialsUrl !== '#' && (
-                    <a
-                      href={socialsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-4 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-sm hover:shadow-lg"
-                    >
-                      Clubs Social Handles
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </a>
-                  )}
+                  <a
+                    href={socialsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-4 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-sm hover:shadow-lg"
+                  >
+                    Clubs Social Handles
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
                 </div>
                 <p className="mt-4 text-sm text-gray-500">Clubs social handles will be added shortly.</p>
               </div>

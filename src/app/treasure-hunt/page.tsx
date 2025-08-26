@@ -30,7 +30,7 @@ export default function TreasureHuntPage() {
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <Link href="/#announcements" className="hover:text-primary transition-colors">Announcements</Link>
             <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors">Club Showcase Day</Link>
-            <Link href="/treasure-hunt" className="hover:text-primary transition-colors">Treasure Hunt</Link>
+            <Link href="/treasure-hunt" className="hover:text-primary transition-colors">Surprise</Link>
             <Link href="/team-building-activities" className="hover:text-primary transition-colors">Team Building Activities</Link>
           </nav>
 
@@ -50,7 +50,7 @@ export default function TreasureHuntPage() {
               <Link href="/" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
               <Link href="/#announcements" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Announcements</Link>
               <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Club Showcase Day</Link>
-              <Link href="/treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Treasure Hunt</Link>
+              <Link href="/treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Surprise</Link>
               <Link href="/team-building-activities" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Team Building Activities</Link>
             </nav>
           </div>
@@ -64,8 +64,8 @@ export default function TreasureHuntPage() {
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
           </Link>
           <div className="mt-6 sm:mt-8">
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Treasure Hunt</h1>
-            <p className="mt-3 text-gray-600 max-w-2xl">Details, instructions, and links for the Treasure Hunt will be published here. Stay tuned.</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Surprise</h1>
+            <p className="mt-3 text-gray-600 max-w-2xl">Details, instructions, and links for the Surprise event will be published here. Stay tuned.</p>
           </div>
         </div>
       </section>
