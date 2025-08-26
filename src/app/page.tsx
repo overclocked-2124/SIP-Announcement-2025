@@ -9,16 +9,10 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
   {
-    title: "Venue for 2nd session - 26-08-2025",
+    title: "Student Induction Programme Schedule",
     date: "26 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1zUKvD9olmn5NyezLOIJWrThtFU71MOQc/view?usp=sharing",
+    driveShare: "https://drive.google.com/file/d/1CSvyvfaCF-IgHO1uAN0cGoqMJxftSBsw/view?usp=drive_link",
     type: "schedule"
-  },
-  {
-    title: "Attendence Link Day-2 Event-1",
-    date: "26 Aug 2025",
-    driveShare: "https://attendance.rvcesip2025.org/event/XCzPkGmkvgHf5tKoP6Bm",
-    type: "clubs"
   },
   {
     title: "Counselor Details",
