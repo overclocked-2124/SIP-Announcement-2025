@@ -128,6 +128,12 @@ export default function ClubShowcaseInstructionsPage() {
                       You are <strong>strongly advised</strong> to go through the <strong>complete brochure</strong> and the <strong>social media handles</strong> of all clubs to decide which events to attend.
                     </span>
                   </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
+                    <span className="text-gray-700 leading-relaxed">
+                      <strong>Recruitment will be conducted separately.</strong> These events are for you to <strong>explore and get a feel</strong> of what each club does. <strong>Booking an event does not restrict</strong> you to joining only those clubs in the future.
+                    </span>
+                  </li>
                 </ul>
               </div>
             </div>
