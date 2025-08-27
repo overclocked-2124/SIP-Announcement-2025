@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Menu, X } from 'lucide-r
 export default function ClubShowcaseInstructionsPage() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const brochureUrl = 'https://drive.google.com/file/d/1CLKElnqbptFEx596ZVIeLU4uEWabT6_s/view?usp=sharing';
+  const brochureUrl = 'https://drive.google.com/file/d/1fdZTNRmBKSuwdY-xzZnIqldjhOG_Hx9d/view?usp=drive_link';
   const socialsUrl = 'https://drive.google.com/file/d/18Qghv5FivmSgN-DWjn7TjHqhB5vPQP0q/view?usp=drive_link';
 
   return (
