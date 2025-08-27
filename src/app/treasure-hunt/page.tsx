@@ -66,6 +66,7 @@ export default function TreasureHuntPage() {
           <div className="mt-6 sm:mt-8">
             <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Treasure Hunt</h1>
             <p className="mt-3 text-gray-600 max-w-2xl">Details, instructions, and links for the Treasure Hunt event will be published here. Stay tuned.</p>
+            <p className="mt-2 text-sm text-orange-600 font-bold">Date: 29-08-2025</p>
           </div>
         </div>
       </section>
