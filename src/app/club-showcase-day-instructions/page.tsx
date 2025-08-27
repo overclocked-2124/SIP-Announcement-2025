@@ -66,6 +66,7 @@ export default function ClubShowcaseInstructionsPage() {
           <div className="mt-6 sm:mt-8">
             <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Club Showcasing Day Instructions</h1>
             <p className="mt-3 text-gray-600 max-w-2xl">Please read these instructions carefully before attending the Club Showcasing Day. Follow the guidelines to ensure a smooth and engaging experience.</p>
+            <p className="mt-2 text-sm text-orange-600 font-bold">Date: 28-08-2025</p>
           </div>
         </div>
       </section>
@@ -118,7 +119,7 @@ export default function ClubShowcaseInstructionsPage() {
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 mt-1 text-primary shrink-0" />
                     <span className="text-gray-700 leading-relaxed">
-                      Each event is limited to <strong>70 people</strong> — strictly <strong>first-come, first-served</strong>.
+                      Each event has <strong>70 booking slots</strong>. Priority goes to the <strong>first 70 students who successfully book</strong>. After 70 confirmed bookings, the event will be <strong>closed</strong> for further bookings. Arriving early at the venue <strong>does not guarantee entry</strong> without a valid booking ticket.
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -161,7 +162,7 @@ export default function ClubShowcaseInstructionsPage() {
                       aria-disabled="true"
                       className="w-full inline-flex items-center justify-center px-4 py-3 bg-gray-300 text-gray-600 font-semibold rounded-lg cursor-not-allowed opacity-80"
                     >
-                      Slot Booking Software
+                      Event Booking Software
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </button>
                     <p className="text-xs text-gray-500 text-center">Link will be added soon</p>
@@ -173,7 +174,7 @@ export default function ClubShowcaseInstructionsPage() {
                       aria-disabled="true"
                       className="w-full inline-flex items-center justify-center px-4 py-3 bg-gray-300 text-gray-600 font-semibold rounded-lg cursor-not-allowed opacity-80"
                     >
-                      Demo Video (Slot Booking)
+                      Demo Video (Event Booking)
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </button>
                     <p className="text-xs text-gray-500 text-center">Video link will be added soon</p>
