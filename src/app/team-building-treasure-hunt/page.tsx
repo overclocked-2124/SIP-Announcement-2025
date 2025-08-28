@@ -15,7 +15,7 @@ export default function TeamBuildingTreasureHuntPage() {
   const treasureHuntUrl = '#';
   // TODO: replace with actual venue file URLs
   const venueMorningUrl = 'https://drive.google.com/file/d/1VRw-F7hdnJZwNbvxXMUAuaj6a2Rx-OZ8/view?usp=sharing'; // 9am-11am
-  const venueMiddayUrl = 'https://drive.google.com/file/d/1VRw-F7hdnJZwNbvxXMUAuaj6a2Rx-OZ8/view?usp=drive_link';  // 11:30am-1:30pm
+  const venueMiddayUrl = 'https://drive.google.com/file/d/1OSIyJ-cpQgJNVijJnU5ophI0oMHnwtfp/view?usp=drive_link';  // 11:30am-1:30pm
 
   const instructions = [
     'Open the file named "9am-to-11am" and search for your respective names and report to venue.',
