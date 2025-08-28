@@ -9,11 +9,11 @@ import DisclaimerModal from '@/components/DisclaimerModal';
 
 const announcements = [
   {
-    title: "Club Showcasing Day Instructions",
-    date: "23 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/17yD6W8r8Nj7lZfYwbuSHn2z56WLu-TFu/view?usp=drive_link",
-    route: "/club-showcase-day-instructions",
-    type: "clubs"
+    title: "🎯 Club Showcase Day - Share Your Feedback!",
+    date: "28 Aug 2025",
+    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLSclmmAkyJH0h4FK3p0Y1ymzS7Z7FRhwvETQqcVq68ZrGWEE-g/viewform?usp=header",
+    type: "clubs",
+    isHighlighted: true
   },
   {
     title: "Student Induction Programme Schedule",
@@ -28,7 +28,7 @@ const announcements = [
     type: "counselors"
   },
   {
-    title: "Key Executives & Councellors.",
+    title: "Key Executives & Councellors",
     date: "22 Aug 2025",
     driveShare: "https://drive.google.com/file/d/1dGkgwG8B-tIu-EsVpclP7exWNARNH-C6/view?usp=drive_link",
     type: "counselors"
@@ -110,49 +110,41 @@ const Header = () => {
 
 
 
-const AnnouncementCard = ({ announcement }: { announcement: typeof announcements[0] }) => (
-  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-primary/50 transition-all duration-300 ease-in-out transform hover:-translate-y-2 overflow-hidden group">
-    <div className="p-6 flex flex-col h-full">
-      <div className="flex items-center gap-4 mb-4">
-        <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary/20 transition-colors">
-          {iconMap[announcement.type] || <FileText className="w-6 h-6 text-primary" />}
+const AnnouncementCard = ({ announcement }: { announcement: typeof announcements[0] }) => {
+  const isHighlighted = announcement.isHighlighted || false;
+  
+  return (
+    <div className={`relative rounded-xl shadow-md overflow-hidden border-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${isHighlighted ? 'bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200 ring-2 ring-blue-100' : 'bg-white border-gray-100'}`}>
+      {isHighlighted && (
+        <div className="absolute top-0 right-0 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-bl-lg">
+          NEW
         </div>
-        <div>
-          <p className="text-sm text-gray-500 group-hover:text-primary transition-colors">{announcement.date}</p>
+      )}
+      <div className="p-6 flex flex-col h-full">
+        <div className="flex items-center gap-4 mb-4">
+          {iconMap[announcement.type]}
+          <span className={`text-sm font-medium ${isHighlighted ? 'text-blue-600' : 'text-gray-500'}`}>
+            {announcement.date}
+          </span>
         </div>
-      </div>
-      <h3 className="text-xl font-bold text-gray-800 flex-grow">{announcement.title}</h3>
-      <div className="mt-6 flex items-center gap-3 pt-4 border-t border-gray-100">
-        {announcement.driveShare === "#" && !('route' in announcement) ? (
-          <button
-            disabled
-            className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-gray-300 text-gray-500 font-semibold rounded-lg cursor-not-allowed"
-          >
-            Coming Soon
-          </button>
-        ) : announcement && (announcement as any).route ? (
-          <Link
-            href={(announcement as any).route}
-            className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg transform hover:-translate-y-0.5"
-          >
-            View
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Link>
-        ) : (
+        <h3 className={`text-lg font-semibold mb-3 ${isHighlighted ? 'text-blue-800' : 'text-gray-800'}`}>
+          {announcement.title}
+        </h3>
+        <div className="mt-auto">
           <a
             href={announcement.driveShare}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg transform hover:-translate-y-0.5"
+            className={`inline-flex items-center font-medium group ${isHighlighted ? 'text-blue-600 hover:text-blue-800' : 'text-primary'}`}
           >
-            {announcement.type === 'livestream' ? 'Watch Live' : announcement.type === 'bootkit' ? 'View Online' : 'View'}
-            <ArrowRight className="w-5 h-5 ml-2" />
+            {isHighlighted ? 'Submit Feedback' : 'View Details'}
+            <ArrowRight className={`ml-1 h-4 w-4 transition-transform group-hover:translate-x-1 ${isHighlighted ? 'text-blue-500' : ''}`} />
           </a>
-        )}
+        </div>
       </div>
     </div>
-  </div>
-)
+  );
+};
 
 const Announcements = () => (
   <section id="announcements" className="py-20 sm:py-32 bg-white">
