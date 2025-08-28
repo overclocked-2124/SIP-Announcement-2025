@@ -161,18 +161,15 @@ export default function ClubShowcaseInstructionsPage() {
                     Clubs Social Handles
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </a>
-                  <div className="space-y-1">
-                    <button
-                      type="button"
-                      disabled
-                      aria-disabled="true"
-                      className="w-full inline-flex items-center justify-center px-4 py-3 bg-gray-300 text-gray-600 font-semibold rounded-lg cursor-not-allowed opacity-80"
-                    >
-                      Event Booking Software
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </button>
-                    <p className="text-xs text-gray-500 text-center">Link will be added soon</p>
-                  </div>
+                  <a
+                    href="https://clubshowcasing.rvcesip2025.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-full px-4 py-3 font-semibold text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow-sm hover:bg-blue-700 hover:shadow-lg"
+                  >
+                    Event Booking Software
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
                   <div className="space-y-1">
                     <button
                       type="button"
