@@ -7,7 +7,15 @@ import { FileText, Book, Users, Building, Star, ArrowRight, Menu, X, Youtube } f
 import HeroSection from '@/components/HeroSection';
 import DisclaimerModal from '@/components/DisclaimerModal';
 
-const announcements = [
+type Announcement = {
+  title: string;
+  date: string;
+  driveShare: string;
+  type: string;
+  isHighlighted?: boolean;
+};
+
+const announcements: Announcement[] = [
   {
     title: "🎯 Club Showcase Day - Share Your Feedback!",
     date: "28 Aug 2025",
@@ -33,12 +41,7 @@ const announcements = [
     driveShare: "https://drive.google.com/file/d/1dGkgwG8B-tIu-EsVpclP7exWNARNH-C6/view?usp=drive_link",
     type: "counselors"
   },
-  {
-    title: "Club Showcasing Day Brochure",
-    date: "23 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1fdZTNRmBKSuwdY-xzZnIqldjhOG_Hx9d/view?usp=drive_link",
-    type: "clubs"
-  },
+  
   {
     title: "Coding Resources (Bootkit)",
     date: "22 Aug 2025", 
@@ -78,9 +81,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6 text-gray-600 font-medium">
           <Link href="#" className="hover:text-primary transition-colors">Home</Link>
           <Link href="#announcements" className="hover:text-primary transition-colors">Announcements</Link>
-          <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors">Club Showcase Day</Link>
-          <Link href="/treasure-hunt" className="hover:text-primary transition-colors">Treasure Hunt</Link>
-          <Link href="/team-building-activities" className="hover:text-primary transition-colors">Team Building Activities</Link>
+          <Link href="/team-building-treasure-hunt" className="hover:text-primary transition-colors">Team Building + Treasure Hunt</Link>
         </nav>
         
         <button 
@@ -98,9 +99,7 @@ const Header = () => {
           <nav className="flex flex-col items-center gap-4 text-gray-600 font-medium py-4">
             <Link href="#" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="#announcements" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Announcements</Link>
-            <Link href="/club-showcase-day-instructions" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Club Showcase Day</Link>
-            <Link href="/treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Treasure Hunt</Link>
-            <Link href="/team-building-activities" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Team Building Activities</Link>
+            <Link href="/team-building-treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Team Building + Treasure Hunt</Link>
           </nav>
         </div>
       )}
