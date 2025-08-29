@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import SiteBanner from '@/components/SiteBanner';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <body className="min-h-screen bg-background text-foreground">
+        <SiteBanner />
         <main className="relative z-10">{children}</main>
       </body>
     </html>

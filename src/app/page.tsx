@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FileText, Book, Users, Building, Star, ArrowRight, Menu, X, Youtube } from 'lucide-react';
+import { FileText, Book, Users, Building, Star, ArrowRight, Menu, X, Youtube, Bell, Trophy } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import DisclaimerModal from '@/components/DisclaimerModal';
 
@@ -15,11 +15,24 @@ type Announcement = {
   isHighlighted?: boolean;
 };
 
+type NotificationItem = {
+  message: string;
+  timestamp: string; // display string
+  link?: string;
+};
+
 const announcements: Announcement[] = [
   {
-    title: "🎯 Club Showcase Day - Share Your Feedback!",
+    title: "Sports Team Selection Trials – Register Now",
+    date: "29 Aug 2025",
+    driveShare: "https://forms.gle/cT4X9SaRtVUQw5Lm7",
+    type: "sports",
+    isHighlighted: true,
+  },
+  {
+    title: "Team building activities feedback form",
     date: "28 Aug 2025",
-    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLSclmmAkyJH0h4FK3p0Y1ymzS7Z7FRhwvETQqcVq68ZrGWEE-g/viewform?usp=header",
+    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLSetm7YZdBoKBndkXqtX8jZDRk0pBJ47Lvo2kxJL5j68t23UiQ/viewform?usp=header",
     type: "clubs",
     isHighlighted: true
   },
@@ -60,6 +73,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   venues: <Building className="w-8 h-8 text-primary" />,
   clubs: <Star className="w-8 h-8 text-primary" />,
   livestream: <Youtube className="w-8 h-8 text-primary" />,
+  sports: <Trophy className="w-8 h-8 text-primary" />,
 }
 
 const Header = () => {
@@ -134,7 +148,7 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
             rel="noopener noreferrer"
             className={`inline-flex items-center font-medium group ${isHighlighted ? 'text-blue-600 hover:text-blue-800' : 'text-primary'}`}
           >
-            {isHighlighted ? 'Submit Feedback' : 'View Details'}
+            {announcement.type === 'sports' ? 'Apply' : (isHighlighted ? 'Submit Feedback' : 'View Details')}
             <ArrowRight className={`ml-1 h-4 w-4 transition-transform group-hover:translate-x-1 ${isHighlighted ? 'text-blue-500' : ''}`} />
           </a>
         </div>
@@ -143,6 +157,54 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
   );
 };
 
+const notifications: NotificationItem[] = [
+  {
+    message:
+      'Report tomorrow (30-08-2025) by 8:50 AM and proceed to usual SIP Day 1 venues.',
+    timestamp: '29 Aug 2025, 5:00 PM',
+  },
+  {
+    message: 'Team building activities feedback form is active.',
+    timestamp: '29 Aug 2025, 4:00 PM',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSetm7YZdBoKBndkXqtX8jZDRk0pBJ47Lvo2kxJL5j68t23UiQ/viewform?usp=header',
+  },
+];
+
+const NotificationsPanel = () => (
+  <aside className="lg:sticky lg:top-20">
+    <div className="rounded-xl border border-orange-300 bg-white shadow-sm overflow-hidden">
+      <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-200 bg-gray-50">
+        <Bell className="w-4 h-4 text-primary" aria-hidden="true" />
+        <h3 className="text-sm font-semibold text-gray-800">Notifications</h3>
+      </div>
+      <ul className="divide-y divide-gray-100">
+        {notifications.length === 0 && (
+          <li className="px-4 py-4 text-sm text-gray-500">No new notifications</li>
+        )}
+        {notifications.map((n, idx) => (
+          <li key={idx} className="px-4 py-3">
+            <p className="text-sm text-gray-900">
+              {n.link ? (
+                <a
+                  href={n.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-primary/30 underline-offset-2 hover:text-primary"
+                >
+                  {n.message}
+                </a>
+              ) : (
+                n.message
+              )}
+            </p>
+            <p className="mt-1 text-xs text-gray-500">{n.timestamp}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </aside>
+);
+
 const Announcements = () => (
   <section id="announcements" className="py-20 sm:py-32 bg-white">
     <div className="container mx-auto px-4">
@@ -150,10 +212,18 @@ const Announcements = () => (
         <h2 className="text-4xl font-bold text-gray-900">Welcome 2025-29 batch of students</h2>
         <p className="text-lg text-gray-600 mt-2">Student Induction Programme 2025</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {announcements.map((announcement) => (
-          <AnnouncementCard key={announcement.title} announcement={announcement} />
-        ))}
+
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="lg:col-span-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {announcements.map((announcement) => (
+              <AnnouncementCard key={announcement.title} announcement={announcement} />
+            ))}
+          </div>
+        </div>
+        <div className="lg:col-span-1">
+          <NotificationsPanel />
+        </div>
       </div>
     </div>
   </section>
