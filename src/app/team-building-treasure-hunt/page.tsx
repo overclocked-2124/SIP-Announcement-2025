@@ -12,7 +12,10 @@ export default function TeamBuildingTreasureHuntPage() {
   const socialsUrl = '#';
   // TODO: replace with actual event website URLs
   const teamBuildingUrl = '#';
-  const treasureHuntUrl = '#';
+  const treasureHuntUrl = 'http://treasurehunt.rvcesip2025.org/';
+  // TODO: replace with individual team-building activity URLs
+  const speedFriendingUrl = 'http://sp.rvcesip2025.org/';
+  const thisOrThatUrl = 'https://thisorthat.rvcesip2025.org/';
   // TODO: replace with actual venue file URLs
   const venueMorningUrl = 'https://drive.google.com/file/d/1VRw-F7hdnJZwNbvxXMUAuaj6a2Rx-OZ8/view?usp=sharing'; // 9am-11am
   const venueMiddayUrl = 'https://drive.google.com/file/d/1OSIyJ-cpQgJNVijJnU5ophI0oMHnwtfp/view?usp=drive_link';  // 11:30am-1:30pm
@@ -113,26 +116,49 @@ export default function TeamBuildingTreasureHuntPage() {
                     <h3 className="text-xl font-semibold text-gray-900">Team Building Activities</h3>
                   </div>
                   <p className="text-gray-700">Refer to the instructions above for timings and venues.</p>
-                  {teamBuildingUrl === '#' ? (
-                    <button
-                      type="button"
-                      aria-disabled
-                      className="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold shadow-sm cursor-not-allowed bg-gray-200 text-gray-500"
-                    >
-                      Coming soon
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </button>
-                  ) : (
-                    <a
-                      href={teamBuildingUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center justify-center px-4 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg"
-                    >
-                      Open Team Building Site
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </a>
-                  )}
+                  <div className="mt-4 flex flex-col sm:flex-row gap-3">
+                    {speedFriendingUrl === '#' ? (
+                      <button
+                        type="button"
+                        aria-disabled
+                        className="inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold shadow-sm cursor-not-allowed bg-gray-200 text-gray-500"
+                      >
+                        Speed Friending — Coming soon
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </button>
+                    ) : (
+                      <a
+                        href={speedFriendingUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center px-4 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg"
+                      >
+                        Open Speed Friending
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </a>
+                    )}
+
+                    {thisOrThatUrl === '#' ? (
+                      <button
+                        type="button"
+                        aria-disabled
+                        className="inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold shadow-sm cursor-not-allowed bg-gray-200 text-gray-500"
+                      >
+                        This Or That — Coming soon
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </button>
+                    ) : (
+                      <a
+                        href={thisOrThatUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center px-4 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-300 shadow-sm hover:shadow-lg"
+                      >
+                        Open This Or That
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-6">
