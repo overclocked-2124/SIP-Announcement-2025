@@ -23,13 +23,6 @@ type NotificationItem = {
 
 const announcements: Announcement[] = [
   {
-    title: "SIP Report Format",
-    date: "29 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1Q3Qv4D3u0rv7AnzreYvqGGwLS-pEcX0O/view?usp=drive_link",
-    type: "clubs",
-    isHighlighted: true
-  },
-  {
     title: "Sports Team Selection Trials – Register Now",
     date: "29 Aug 2025",
     driveShare: "https://forms.gle/cT4X9SaRtVUQw5Lm7",
@@ -102,6 +95,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6 text-gray-600 font-medium">
           <Link href="#" className="hover:text-primary transition-colors">Home</Link>
           <Link href="#announcements" className="hover:text-primary transition-colors">Announcements</Link>
+          <Link href="/sip-report" className="hover:text-primary transition-colors">SIP Report</Link>
         </nav>
         
         <button 
@@ -119,6 +113,7 @@ const Header = () => {
           <nav className="flex flex-col items-center gap-4 text-gray-600 font-medium py-4">
             <Link href="#" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="#announcements" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Announcements</Link>
+            <Link href="/sip-report" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>SIP Report</Link>
           </nav>
         </div>
       )}
