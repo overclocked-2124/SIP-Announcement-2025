@@ -81,7 +81,6 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6 text-gray-600 font-medium">
           <Link href="#" className="hover:text-primary transition-colors">Home</Link>
           <Link href="#announcements" className="hover:text-primary transition-colors">Announcements</Link>
-          <Link href="/team-building-treasure-hunt" className="hover:text-primary transition-colors">Team Building + Treasure Hunt</Link>
         </nav>
         
         <button 
@@ -99,7 +98,6 @@ const Header = () => {
           <nav className="flex flex-col items-center gap-4 text-gray-600 font-medium py-4">
             <Link href="#" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="#announcements" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Announcements</Link>
-            <Link href="/team-building-treasure-hunt" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>Team Building + Treasure Hunt</Link>
           </nav>
         </div>
       )}
