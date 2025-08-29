@@ -23,6 +23,13 @@ type NotificationItem = {
 
 const announcements: Announcement[] = [
   {
+    title: "SIP Report Format",
+    date: "29 Aug 2025",
+    driveShare: "https://drive.google.com/file/d/1Q3Qv4D3u0rv7AnzreYvqGGwLS-pEcX0O/view?usp=drive_link",
+    type: "clubs",
+    isHighlighted: true
+  },
+  {
     title: "Sports Team Selection Trials – Register Now",
     date: "29 Aug 2025",
     driveShare: "https://forms.gle/cT4X9SaRtVUQw5Lm7",
@@ -31,7 +38,7 @@ const announcements: Announcement[] = [
   },
   {
     title: "Team building activities feedback form",
-    date: "28 Aug 2025",
+    date: "29 Aug 2025",
     driveShare: "https://docs.google.com/forms/d/e/1FAIpQLSetm7YZdBoKBndkXqtX8jZDRk0pBJ47Lvo2kxJL5j68t23UiQ/viewform?usp=header",
     type: "clubs",
     isHighlighted: true
