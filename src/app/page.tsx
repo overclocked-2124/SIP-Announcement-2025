@@ -19,6 +19,7 @@ type NotificationItem = {
   message: string;
   timestamp: string; // display string
   link?: string;
+  goLive?: string; // ISO timestamp (with timezone offset) after which to show
 };
 
 const announcements: Announcement[] = [
@@ -161,6 +162,12 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
+    message: 'Attendance for today. Tap to mark your attendance.',
+    timestamp: '30 Aug 2025, 10:20 AM',
+    link: '#',
+    goLive: '2025-08-30T10:19:00+05:30',
+  },
+  {
     message:
       'Report tomorrow (30-08-2025) by 8:50 AM and proceed to usual SIP Day 1 venues.',
     timestamp: '29 Aug 2025, 5:00 PM',
@@ -172,40 +179,55 @@ const notifications: NotificationItem[] = [
   },
 ];
 
-const NotificationsPanel = () => (
-  <aside className="lg:sticky lg:top-20">
-    <div className="rounded-xl border border-orange-300 bg-white shadow-sm overflow-hidden">
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-200 bg-gray-50">
-        <Bell className="w-4 h-4 text-primary" aria-hidden="true" />
-        <h3 className="text-sm font-semibold text-gray-800">Notifications</h3>
+const NotificationsPanel = () => {
+  const [now, setNow] = useState<Date>(new Date());
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 15000); // refresh every 15s
+    return () => clearInterval(id);
+  }, []);
+
+  const visible = notifications.filter((n) => {
+    if (!n.goLive) return true;
+    const go = new Date(n.goLive).getTime();
+    return now.getTime() >= go;
+  });
+
+  return (
+    <aside className="lg:sticky lg:top-20">
+      <div className="rounded-xl border border-orange-300 bg-white shadow-sm overflow-hidden">
+        <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-200 bg-gray-50">
+          <Bell className="w-4 h-4 text-primary" aria-hidden="true" />
+          <h3 className="text-sm font-semibold text-gray-800">Notifications</h3>
+        </div>
+        <ul className="divide-y divide-gray-100">
+          {visible.length === 0 && (
+            <li className="px-4 py-4 text-sm text-gray-500">No new notifications</li>
+          )}
+          {visible.map((n, idx) => (
+            <li key={idx} className="px-4 py-3">
+              <p className="text-sm text-gray-900">
+                {n.link ? (
+                  <a
+                    href={n.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-primary/30 underline-offset-2 hover:text-primary"
+                  >
+                    {n.message}
+                  </a>
+                ) : (
+                  n.message
+                )}
+              </p>
+              <p className="mt-1 text-xs text-gray-500">{n.timestamp}</p>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className="divide-y divide-gray-100">
-        {notifications.length === 0 && (
-          <li className="px-4 py-4 text-sm text-gray-500">No new notifications</li>
-        )}
-        {notifications.map((n, idx) => (
-          <li key={idx} className="px-4 py-3">
-            <p className="text-sm text-gray-900">
-              {n.link ? (
-                <a
-                  href={n.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline decoration-primary/30 underline-offset-2 hover:text-primary"
-                >
-                  {n.message}
-                </a>
-              ) : (
-                n.message
-              )}
-            </p>
-            <p className="mt-1 text-xs text-gray-500">{n.timestamp}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </aside>
-);
+    </aside>
+  );
+};
 
 const Announcements = () => (
   <section id="announcements" className="py-20 sm:py-32 bg-white">
