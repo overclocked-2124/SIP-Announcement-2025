@@ -165,7 +165,7 @@ const notifications: NotificationItem[] = [
     message: 'Attendance for today. Tap to mark your attendance.',
     timestamp: '30 Aug 2025, 10:20 AM',
     link: '#',
-    goLive: '2025-08-30T10:19:00+05:30',
+    goLive: '2025-08-30T10:20:00+05:30',
   },
   {
     message:
