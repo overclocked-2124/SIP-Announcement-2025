@@ -165,7 +165,7 @@ const notifications: NotificationItem[] = [
     message:
       'Report tomorrow (1-09-2025) by 8:50 AM and proceed to UHV venues.Click on message to view the venues',
     timestamp: '31 Aug 2025, 7:30 AM',
-    link: 'https://drive.google.com/file/d/18LD4wItzJlhXdJyKNJ8CSPj1GZHmWBLj/view?usp=drive_link',
+    link: 'https://drive.google.com/file/d/1njhY-x8Z6KTq6t3ckGUvmOGcr3OHz0HM/view?usp=drive_link',
   },
   {
     message:
