@@ -169,13 +169,13 @@ const notifications: NotificationItem[] = [
   {
     message: 'Attendance for 30-08-2025. Tap to mark your attendance for session 1',
     timestamp: '30 Aug 2025, 12:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/jXBstZL7Km3CTT5SjRNS',
+    link: '#',
     goLive: '2025-08-30T12:45:00+05:30',
   },
   {
     message: 'Attendance for 30-08-2025. Tap to mark your attendance for session 1',
     timestamp: '30 Aug 2025, 10:45 AM',
-    link: 'https://attendance.rvcesip2025.org/event/8eTmrwSVTWVGiaU3Gaf9',
+    link: '#',
     goLive: '2025-08-30T10:45:00+05:30',
   },
   {
