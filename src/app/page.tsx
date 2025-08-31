@@ -163,6 +163,11 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 const notifications: NotificationItem[] = [
   {
     message:
+      'Students who have UHV session on 1-09-2025 or 2-09-2025 must carry a rough notebook and pen.',
+    timestamp: '31 Aug 2025, 7:30 AM',
+  },
+  {
+    message:
       'Report tomorrow (1-09-2025) by 8:50 AM and proceed to usual SIP Day 1 venues.',
     timestamp: '31 Aug 2025, 7:30 AM',
   },
