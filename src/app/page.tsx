@@ -173,23 +173,6 @@ const notifications: NotificationItem[] = [
     timestamp: '31 Aug 2025, 7:30 AM',
   },
   {
-    message: 'Attendance for 30-08-2025. Tap to mark your attendance for session 1',
-    timestamp: '30 Aug 2025, 12:45 PM',
-    link: '#',
-    goLive: '2025-08-30T12:45:00+05:30',
-  },
-  {
-    message: 'Attendance for 30-08-2025. Tap to mark your attendance for session 1',
-    timestamp: '30 Aug 2025, 10:45 AM',
-    link: '#',
-    goLive: '2025-08-30T10:45:00+05:30',
-  },
-  {
-    message:
-      'Report tomorrow (30-08-2025) by 8:50 AM and proceed to usual SIP Day 1 venues.',
-    timestamp: '29 Aug 2025, 5:00 PM',
-  },
-  {
     message: 'Team building activities feedback form is active.',
     timestamp: '29 Aug 2025, 4:00 PM',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSetm7YZdBoKBndkXqtX8jZDRk0pBJ47Lvo2kxJL5j68t23UiQ/viewform?usp=header',
