@@ -162,6 +162,11 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
+    message:
+      'Report tomorrow (1-09-2025) by 8:50 AM and proceed to usual SIP Day 1 venues.',
+    timestamp: '31 Aug 2025, 7:30 AM',
+  },
+  {
     message: 'Attendance for 30-08-2025. Tap to mark your attendance for session 1',
     timestamp: '30 Aug 2025, 12:45 PM',
     link: 'https://attendance.rvcesip2025.org/event/jXBstZL7Km3CTT5SjRNS',
