@@ -162,8 +162,26 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
+    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
+    timestamp: '2 Sept 2025, 12:45 PM',
+    link: 'https://attendance.rvcesip2025.org/event/JvN2QZxYYfCDO9hj5bmd',
+    goLive: '2025-09-02T12:45:00+05:30',
+  },
+  {
+    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 1 Physics Cycle',
+    timestamp: '2 Sept 2025, 10:45 PM',
+    link: 'https://attendance.rvcesip2025.org/event/0kiyqAQP4l4tlMozBgDa',
+    goLive: '2025-09-02T22:45:00+05:30',
+  },
+  {
+    message: 'Attendance for 1-09-2025. Tap to mark your attendance for UHV Chemistry Cycle',
+    timestamp: '2 Sept 2025, 10:45 PM',
+    link: 'https://attendance.rvcesip2025.org/event/WDJIFMH9LBGPKAFVpGOn',
+    goLive: '2025-09-02T22:45:00+05:30',
+  },
+  {
     message:
-      'Students who have UHV session on 2-09-2025 or 2-09-2025 must carry a rough notebook and pen.',
+      'Students who have UHV session on 2-09-2025 must carry a rough notebook and pen.',
     timestamp: '1 Sept 2025, 7:30 AM',
   },
   {
@@ -172,32 +190,6 @@ const notifications: NotificationItem[] = [
       timestamp: '1 Sept 2025, 7:30 AM',
     link: 'https://drive.google.com/file/d/1njhY-x8Z6KTq6t3ckGUvmOGcr3OHz0HM/view?usp=drive_link',
   },
-  {
-    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
-    timestamp: '30 Aug 2025, 4:00 PM',
-    link:'https://attendance.rvcesip2025.org/event/uTWWq5sVPt9OUbN5POzL',
-    
-  },
-  
-  {
-    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Chemistry Cycle',
-    timestamp: '30 Aug 2025, 12:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/wMaLGEVNJT7fNUCUNOev',
-    
-  },
-  {
-    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 1 Physics Cycle',
-    timestamp: '30 Aug 2025, 10:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/uTWWq5sVPt9OUbN5POzL',
-    
-  },
-  {
-    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 1 Chemistry Cycle',
-    timestamp: '30 Aug 2025, 10:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/itQ3lz7nvsAt4nWhzNQQ',
-    
-  },
-  
   {
     message: 'Team building activities feedback form is active.',
     timestamp: '29 Aug 2025, 4:00 PM',
