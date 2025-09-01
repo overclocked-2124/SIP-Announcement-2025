@@ -164,7 +164,7 @@ const notifications: NotificationItem[] = [
   {
     message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
     timestamp: '30 Aug 2025, 4:00 PM',
-    link: 'https://attendance.rvcesip2025.org/event/9alisxtZMSH7j9lOuaLD',
+    link:'https://attendance.rvcesip2025.org/event/uTWWq5sVPt9OUbN5POzL',
     
   },
   
