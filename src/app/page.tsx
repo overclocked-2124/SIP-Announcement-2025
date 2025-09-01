@@ -162,6 +162,31 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
+    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
+    timestamp: '30 Aug 2025, 4:00 PM',
+    link: 'https://attendance.rvcesip2025.org/event/9alisxtZMSH7j9lOuaLD',
+    goLive: '2025-09-01T16:00:00+05:30',
+  },
+  
+  {
+    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Chemistry Cycle',
+    timestamp: '30 Aug 2025, 12:45 PM',
+    link: 'https://attendance.rvcesip2025.org/event/wMaLGEVNJT7fNUCUNOev',
+    goLive: '2025-09-1T12:45:00+05:30',
+  },
+  {
+    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 1 Physics Cycle',
+    timestamp: '30 Aug 2025, 10:45 PM',
+    link: 'https://attendance.rvcesip2025.org/event/uTWWq5sVPt9OUbN5POzL',
+    goLive: '2025-09-1T10:45:00+05:30',
+  },
+  {
+    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 1 Chemistry Cycle',
+    timestamp: '30 Aug 2025, 10:45 PM',
+    link: 'https://attendance.rvcesip2025.org/event/itQ3lz7nvsAt4nWhzNQQ',
+    goLive: '2025-09-1T10:45:00+05:30',
+  },
+  {
     message:
       'Report tomorrow (1-09-2025) by 8:50 AM and proceed to UHV venues.Click on message to view the venues',
     timestamp: '31 Aug 2025, 7:30 AM',
