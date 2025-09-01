@@ -40,7 +40,7 @@ const announcements: Announcement[] = [
   {
     title: "Student Induction Programme Schedule",
     date: "26 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1CSvyvfaCF-IgHO1uAN0cGoqMJxftSBsw/view?usp=drive_link",
+    driveShare: "https://drive.google.com/file/d/1eNDGeVce48Oox_tf2iP4HerWmwn_LbDO/view?usp=sharing",
     type: "schedule"
   },
   {
@@ -163,6 +163,11 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 const notifications: NotificationItem[] = [
   {
     message:
+      'Students who have UHV session on 2-09-2025 or 2-09-2025 must carry a rough notebook and pen.',
+    timestamp: '1 Sept 2025, 7:30 AM',
+  },
+  {
+    message:
       'Report tomorrow (2-09-2025) by 8:50 AM and proceed to UHV venues.Click on message to view the venues',
       timestamp: '1 Sept 2025, 7:30 AM',
     link: 'https://drive.google.com/file/d/1njhY-x8Z6KTq6t3ckGUvmOGcr3OHz0HM/view?usp=drive_link',
@@ -192,11 +197,7 @@ const notifications: NotificationItem[] = [
     link: 'https://attendance.rvcesip2025.org/event/itQ3lz7nvsAt4nWhzNQQ',
     
   },
-  {
-    message:
-      'Students who have UHV session on 2-09-2025 or 2-09-2025 must carry a rough notebook and pen.',
-    timestamp: '1 Sept 2025, 7:30 AM',
-  },
+  
   {
     message: 'Team building activities feedback form is active.',
     timestamp: '29 Aug 2025, 4:00 PM',
