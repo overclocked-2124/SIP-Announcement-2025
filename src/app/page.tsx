@@ -162,30 +162,9 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
-    message: 'Attendance for 2-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
-    timestamp: '2 Sept 2025, 12:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/JvN2QZxYYfCDO9hj5bmd',
-  },
-  {
-    message: 'Attendance for 2-09-2025. Tap to mark your attendance for session 1 Physics Cycle',
-    timestamp: '2 Sept 2025, 10:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/0kiyqAQP4l4tlMozBgDa',
-  },
-  {
-    message: 'Attendance for 2-09-2025. Tap to mark your attendance for UHV Chemistry Cycle',
-    timestamp: '2 Sept 2025, 10:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/WDJIFMH9LBGPKAFVpGOn',
-  },
-  {
     message:
-      'Students who have UHV session on 2-09-2025 must carry a rough notebook and pen.',
-    timestamp: '1 Sept 2025, 7:30 AM',
-  },
-  {
-    message:
-      'Report tomorrow (2-09-2025) by 8:50 AM and proceed to UHV venues.Click on message to view the venues',
-      timestamp: '1 Sept 2025, 7:30 AM',
-    link: 'https://drive.google.com/file/d/1njhY-x8Z6KTq6t3ckGUvmOGcr3OHz0HM/view?usp=drive_link',
+      'Report tomorrow (3-09-2025) by 8:50 AM and proceed to normal (Day 1) venues.',
+    timestamp: '2 Sept 2025, 7:30 PM',
   },
   {
     message: 'Team building activities feedback form is active.',
@@ -312,3 +291,5 @@ export default function Home() {
     </div>
   )
 }
+
+
