@@ -165,19 +165,16 @@ const notifications: NotificationItem[] = [
     message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
     timestamp: '2 Sept 2025, 12:45 PM',
     link: 'https://attendance.rvcesip2025.org/event/JvN2QZxYYfCDO9hj5bmd',
-    goLive: '2025-09-02T12:45:00+05:30',
   },
   {
     message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 1 Physics Cycle',
     timestamp: '2 Sept 2025, 10:45 PM',
     link: 'https://attendance.rvcesip2025.org/event/0kiyqAQP4l4tlMozBgDa',
-    goLive: '2025-09-02T22:45:00+05:30',
   },
   {
     message: 'Attendance for 1-09-2025. Tap to mark your attendance for UHV Chemistry Cycle',
     timestamp: '2 Sept 2025, 10:45 PM',
     link: 'https://attendance.rvcesip2025.org/event/WDJIFMH9LBGPKAFVpGOn',
-    goLive: '2025-09-02T22:45:00+05:30',
   },
   {
     message:
