@@ -162,17 +162,17 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
-    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
+    message: 'Attendance for 2-09-2025. Tap to mark your attendance for session 2 Physics Cycle',
     timestamp: '2 Sept 2025, 12:45 PM',
     link: 'https://attendance.rvcesip2025.org/event/JvN2QZxYYfCDO9hj5bmd',
   },
   {
-    message: 'Attendance for 1-09-2025. Tap to mark your attendance for session 1 Physics Cycle',
+    message: 'Attendance for 2-09-2025. Tap to mark your attendance for session 1 Physics Cycle',
     timestamp: '2 Sept 2025, 10:45 PM',
     link: 'https://attendance.rvcesip2025.org/event/0kiyqAQP4l4tlMozBgDa',
   },
   {
-    message: 'Attendance for 1-09-2025. Tap to mark your attendance for UHV Chemistry Cycle',
+    message: 'Attendance for 2-09-2025. Tap to mark your attendance for UHV Chemistry Cycle',
     timestamp: '2 Sept 2025, 10:45 PM',
     link: 'https://attendance.rvcesip2025.org/event/WDJIFMH9LBGPKAFVpGOn',
   },
