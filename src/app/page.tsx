@@ -169,6 +169,18 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
+    message: 'Attendance for 3-09-2025. Tap to mark your attendance for session 2 ',
+    timestamp: '3 Sept 2025, 12:45 PM',
+    link: 'https://attendance.rvcesip2025.org/event/OdzTNDlJayXqb7cH2wVY',
+    goLive: '2025-09-03T12:45:00+05:30',
+  },
+  {
+    message: 'Attendance for 3-09-2025. Tap to mark your attendance for session 1 ',
+    timestamp: '3 Sept 2025, 10:45 AM',
+    link: 'https://attendance.rvcesip2025.org/event/87oL4bXQ8XXEZyBhwxJc',
+    goLive: '2025-09-03T10:45:00+05:30',
+  },
+  {
     message:
       'Report tomorrow (3-09-2025) by 8:50 AM and proceed to normal (Day 1) venues.',
     timestamp: '2 Sept 2025, 7:30 PM',
