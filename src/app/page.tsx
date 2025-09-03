@@ -13,6 +13,7 @@ type Announcement = {
   driveShare: string;
   type: string;
   isHighlighted?: boolean;
+  goLive?: string; // ISO timestamp (with timezone offset) after which to show
 };
 
 type NotificationItem = {
@@ -23,6 +24,14 @@ type NotificationItem = {
 };
 
 const announcements: Announcement[] = [
+  {
+    title: "SIP 2025 Feedback Form",
+    date: "4 Sept 2025",
+    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLScDJPPtv0NbSc2ws9pyYOvAcYzbhDQOVqfvYwzgQF5f2CjINA/viewform?usp=header",
+    type: "clubs",
+    isHighlighted: true,
+    goLive: "2025-09-04T12:45:00+05:30",
+  },
   {
     title: "Highlights of Team building activities",
     date: "3 Sept 2025",
@@ -178,6 +187,10 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
+    message: ' Batch A CSE core to attend from ISE seminar hall tomorrow',
+    timestamp: '3 Sept 2025, 8:30 PM',
+  },
+  {
     message: 'Tomorrow\'s Schedule (4 Sept): 🎓 9:00-9:30 Dean Academics | 💼 9:30-11:00 Engineering Career Talk | ☕ 11:00-11:30 Break | 👨‍💼 11:30-12:45 Vice Principal Address | 🎉 12:45-1:00 Valedictory & Feedback | 🍽️ 1:00-2:00 Lunch | 🔬 2:00-4:30 Skill Lab',
     timestamp: '3 Sept 2025, 8:00 PM',
   },
@@ -255,7 +268,21 @@ const NotificationsPanel = () => {
   );
 };
 
-const Announcements = () => (
+const Announcements = () => {
+  const [now, setNow] = useState<Date>(new Date());
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 15000); // refresh every 15s
+    return () => clearInterval(id);
+  }, []);
+
+  const visibleAnnouncements = announcements.filter((announcement) => {
+    if (!announcement.goLive) return true;
+    const go = new Date(announcement.goLive).getTime();
+    return now.getTime() >= go;
+  });
+
+  return (
   <section id="announcements" className="py-20 sm:py-32 bg-white">
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
@@ -266,7 +293,7 @@ const Announcements = () => (
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-3">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {announcements.map((announcement) => (
+            {visibleAnnouncements.map((announcement) => (
               <AnnouncementCard key={announcement.title} announcement={announcement} />
             ))}
           </div>
@@ -277,7 +304,8 @@ const Announcements = () => (
       </div>
     </div>
   </section>
-)
+  );
+};
 
 const Footer = () => (
   <footer className="bg-gray-800 text-white py-12">
