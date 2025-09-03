@@ -30,13 +30,7 @@ const announcements: Announcement[] = [
     type: "video",
     isHighlighted: true,
   },
-  {
-    title: "SIP 2025 Feedback Form",
-    date: "3 Sept 2025",
-    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLScDJPPtv0NbSc2ws9pyYOvAcYzbhDQOVqfvYwzgQF5f2CjINA/viewform?usp=header",
-    type: "clubs",
-    isHighlighted: true,
-  },
+  
   {
     title: "Feedback Form for UHV Event",
     date: "3 Sept 2025",
