@@ -24,6 +24,20 @@ type NotificationItem = {
 
 const announcements: Announcement[] = [
   {
+    title: "Highlights of Team building activities",
+    date: "3 Sept 2025",
+    driveShare: "https://drive.google.com/file/d/167R_m0qVdNLPmVMHMHOq5qZIQh8g-o6P/view?usp=drivesdk",
+    type: "video",
+    isHighlighted: true,
+  },
+  {
+    title: "SIP 2025 Feedback Form",
+    date: "3 Sept 2025",
+    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLScDJPPtv0NbSc2ws9pyYOvAcYzbhDQOVqfvYwzgQF5f2CjINA/viewform?usp=header",
+    type: "clubs",
+    isHighlighted: true,
+  },
+  {
     title: "Feedback Form for UHV Event",
     date: "3 Sept 2025",
     driveShare: "https://forms.gle/3WQLsbmajViQhC2L6",
@@ -82,6 +96,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   clubs: <Star className="w-8 h-8 text-primary" />,
   livestream: <Youtube className="w-8 h-8 text-primary" />,
   sports: <Trophy className="w-8 h-8 text-primary" />,
+  video: <Youtube className="w-8 h-8 text-primary" />,
 }
 
 const Header = () => {
@@ -158,7 +173,7 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
             rel="noopener noreferrer"
             className={`inline-flex items-center font-medium group ${isHighlighted ? 'text-blue-600 hover:text-blue-800' : 'text-primary'}`}
           >
-            {announcement.type === 'sports' ? 'Apply' : (isHighlighted ? 'Submit Feedback' : 'View Details')}
+            {announcement.type === 'sports' ? 'Apply' : (announcement.type === 'video' ? 'View Video' : (isHighlighted ? 'Submit Feedback' : 'View Details'))}
             <ArrowRight className={`ml-1 h-4 w-4 transition-transform group-hover:translate-x-1 ${isHighlighted ? 'text-blue-500' : ''}`} />
           </a>
         </div>
@@ -169,21 +184,25 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
   {
-    message: 'Attendance for 3-09-2025. Tap to mark your attendance for session 2 ',
-    timestamp: '3 Sept 2025, 12:45 PM',
-    link: 'https://attendance.rvcesip2025.org/event/OdzTNDlJayXqb7cH2wVY',
-    goLive: '2025-09-03T12:45:00+05:30',
+    message: 'Tomorrow\'s Schedule (4 Sept): 🎓 9:00-9:30 Dean Academics | 💼 9:30-11:00 Engineering Career Talk | ☕ 11:00-11:30 Break | 👨‍💼 11:30-12:45 Vice Principal Address | 🎉 12:45-1:00 Valedictory & Feedback | 🍽️ 1:00-2:00 Lunch | 🔬 2:00-4:30 Skill Lab',
+    timestamp: '3 Sept 2025, 8:00 PM',
   },
   {
-    message: 'Attendance for 3-09-2025. Tap to mark your attendance for session 1 ',
-    timestamp: '3 Sept 2025, 10:45 AM',
-    link: 'https://attendance.rvcesip2025.org/event/87oL4bXQ8XXEZyBhwxJc',
-    goLive: '2025-09-03T10:45:00+05:30',
+    message: 'Attendance for 4-09-2025. Tap to mark your attendance for session 2 ',
+    timestamp: '4 Sept 2025, 12:30 PM',
+    link: '',
+    goLive: '2025-09-04T12:30:00+05:30',
+  },
+  {
+    message: 'Attendance for 4-09-2025. Tap to mark your attendance for session 1 ',
+    timestamp: '4 Sept 2025, 10:45 AM',
+    link: '',
+    goLive: '2025-09-04T10:45:00+05:30',
   },
   {
     message:
-      'Report tomorrow (3-09-2025) by 8:50 AM and proceed to normal (Day 1) venues.',
-    timestamp: '2 Sept 2025, 7:30 PM',
+      'Report tomorrow (4-09-2025) by 8:50 AM and proceed to normal (Day 1) venues.',
+    timestamp: '3 Sept 2025, 7:30 PM',
   },
   {
     message: 'Team building activities feedback form is active.',
