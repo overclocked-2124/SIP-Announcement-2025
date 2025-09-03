@@ -24,18 +24,25 @@ type NotificationItem = {
 
 const announcements: Announcement[] = [
   {
+    title: "Feedback Form for UHV Event",
+    date: "3 Sept 2025",
+    driveShare: "https://forms.gle/3WQLsbmajViQhC2L6",
+    type: "clubs",
+    isHighlighted: true,
+  },
+  {
     title: "Sports Team Selection Trials – Register Now",
     date: "29 Aug 2025",
     driveShare: "https://forms.gle/cT4X9SaRtVUQw5Lm7",
     type: "sports",
-    isHighlighted: true,
+
   },
   {
     title: "Team building activities feedback form",
     date: "29 Aug 2025",
     driveShare: "https://docs.google.com/forms/d/e/1FAIpQLSetm7YZdBoKBndkXqtX8jZDRk0pBJ47Lvo2kxJL5j68t23UiQ/viewform?usp=header",
     type: "clubs",
-    isHighlighted: true
+
   },
   {
     title: "Student Induction Programme Schedule",
