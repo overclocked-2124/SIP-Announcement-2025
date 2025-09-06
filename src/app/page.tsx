@@ -186,36 +186,7 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 };
 
 const notifications: NotificationItem[] = [
-  {
-    message: ' Batch A CSE core to attend from ISE seminar hall tomorrow',
-    timestamp: '3 Sept 2025, 8:30 PM',
-  },
-  {
-    message: 'Tomorrow\'s Schedule (4 Sept): 🎓 9:00-9:30 Dean Academics | 💼 9:30-11:00 Engineering Career Talk | ☕ 11:00-11:30 Break | 👨‍💼 11:30-12:45 Vice Principal Address | 🎉 12:45-1:00 Valedictory & Feedback | 🍽️ 1:00-2:00 Lunch | 🔬 2:00-4:30 Skill Lab',
-    timestamp: '3 Sept 2025, 8:00 PM',
-  },
-  {
-    message: 'Attendance for 4-09-2025. Tap to mark your attendance for session 2 ',
-    timestamp: '4 Sept 2025, 12:30 PM',
-    link: '',
-    goLive: '2025-09-04T12:30:00+05:30',
-  },
-  {
-    message: 'Attendance for 4-09-2025. Tap to mark your attendance for session 1 ',
-    timestamp: '4 Sept 2025, 10:45 AM',
-    link: '',
-    goLive: '2025-09-04T10:45:00+05:30',
-  },
-  {
-    message:
-      'Report tomorrow (4-09-2025) by 8:50 AM and proceed to normal (Day 1) venues.',
-    timestamp: '3 Sept 2025, 7:30 PM',
-  },
-  {
-    message: 'Team building activities feedback form is active.',
-    timestamp: '29 Aug 2025, 4:00 PM',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSetm7YZdBoKBndkXqtX8jZDRk0pBJ47Lvo2kxJL5j68t23UiQ/viewform?usp=header',
-  },
+  // All notifications have been cleared
 ];
 
 const NotificationsPanel = () => {
