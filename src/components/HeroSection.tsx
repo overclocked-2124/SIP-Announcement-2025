@@ -11,11 +11,11 @@ const HeroSection: React.FC = () => {
       
       <div className="relative z-10 flex flex-col items-center max-w-4xl mx-auto px-6">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-slate-800">
-        Student Induction
+        First Year Announcement
           <span className="block mt-2 md:mt-4 text-primary">2025</span>
         </h1>
         <p className="mt-6 max-w-2xl text-base md:text-lg text-slate-600">
-          Welcome, parents and students. Find all the latest circulars, venue details, and important information regarding the Student Induction Programme right here.
+          Welcome, first-year students and parents. Find the latest circulars, venue details, and essential information for the 2025 batch here.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button 

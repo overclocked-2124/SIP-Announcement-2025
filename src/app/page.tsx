@@ -186,7 +186,16 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 };
 
 const notifications: NotificationItem[] = [
-  // All notifications have been cleared
+  {
+    message: "Press on this to access timetable and section list for C and P cycle students updated as of 9 Sept 2025.",
+    timestamp: "9 Sept 2025",
+    link: "https://drive.google.com/drive/folders/1dncMKlqPBAVWpk2fZMVNgtBoFQrYU3cm",
+  },
+  {
+    message: "Please find the photographs from the Student Induction Program at the link below. You may use these images while preparing the SIP report.",
+    timestamp: "9 Sept 2025",
+    link: "https://drive.google.com/drive/folders/1t8lPMUKAzN_YWdC5DDO0ALcLVbkP0aA2",
+  },
 ];
 
 const NotificationsPanel = () => {
@@ -208,7 +217,7 @@ const NotificationsPanel = () => {
       <div className="rounded-xl border border-orange-300 bg-white shadow-sm overflow-hidden">
         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-200 bg-gray-50">
           <Bell className="w-4 h-4 text-primary" aria-hidden="true" />
-          <h3 className="text-sm font-semibold text-gray-800">Notifications</h3>
+          <h3 className="text-sm font-semibold text-gray-800">Recent Notifications</h3>
         </div>
         <ul className="divide-y divide-gray-100">
           {visible.length === 0 && (
@@ -216,7 +225,8 @@ const NotificationsPanel = () => {
           )}
           {visible.map((n, idx) => (
             <li key={idx} className="px-4 py-3">
-              <p className="text-sm text-gray-900">
+              <p className="text-sm text-gray-900 flex items-start gap-2">
+                <Star className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" strokeWidth={1.6} aria-hidden="true" />
                 {n.link ? (
                   <a
                     href={n.link}
@@ -269,7 +279,7 @@ const Announcements = () => {
             ))}
           </div>
         </div>
-        <div className="lg:col-span-1">
+        <div className="hidden lg:block lg:col-span-1">
           <NotificationsPanel />
         </div>
       </div>
@@ -316,6 +326,9 @@ export default function Home() {
     <div className="bg-gray-50 min-h-screen">
       {showDisclaimer && <DisclaimerModal onClose={handleDisclaimerClose} />}
       <Header />
+      <div className="md:hidden">{/* mobile placement: notifications just below navbar */}
+        <NotificationsPanel />
+      </div>
       <HeroSection />
       <Announcements />
       <Footer />
