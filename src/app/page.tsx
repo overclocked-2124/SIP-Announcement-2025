@@ -25,41 +25,11 @@ type NotificationItem = {
 
 const announcements: Announcement[] = [
   {
-    title: "SIP 2025 Feedback Form",
-    date: "4 Sept 2025",
-    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLScDJPPtv0NbSc2ws9pyYOvAcYzbhDQOVqfvYwzgQF5f2CjINA/viewform?usp=header",
-    type: "clubs",
-    isHighlighted: true,
-    goLive: "2025-09-04T12:45:00+05:30",
-  },
-  {
     title: "Highlights of Team building activities",
     date: "3 Sept 2025",
     driveShare: "https://drive.google.com/file/d/167R_m0qVdNLPmVMHMHOq5qZIQh8g-o6P/view?usp=drivesdk",
     type: "video",
     isHighlighted: true,
-  },
-  
-  {
-    title: "Feedback Form for UHV Event",
-    date: "3 Sept 2025",
-    driveShare: "https://forms.gle/3WQLsbmajViQhC2L6",
-    type: "clubs",
-    isHighlighted: true,
-  },
-  {
-    title: "Sports Team Selection Trials – Register Now",
-    date: "29 Aug 2025",
-    driveShare: "https://forms.gle/cT4X9SaRtVUQw5Lm7",
-    type: "sports",
-
-  },
-  {
-    title: "Team building activities feedback form",
-    date: "29 Aug 2025",
-    driveShare: "https://docs.google.com/forms/d/e/1FAIpQLSetm7YZdBoKBndkXqtX8jZDRk0pBJ47Lvo2kxJL5j68t23UiQ/viewform?usp=header",
-    type: "clubs",
-
   },
   {
     title: "Student Induction Programme Schedule",

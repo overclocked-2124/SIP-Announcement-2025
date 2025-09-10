@@ -24,13 +24,6 @@ const HeroSection: React.FC = () => {
           >
             View Announcements
           </Button>
-          <Button 
-    size="large" 
-    variant="secondary"
-    href="https://drive.google.com/file/d/1eNDGeVce48Oox_tf2iP4HerWmwn_LbDO/view?usp=sharing"
->
-    SIP Schedule
-</Button>
         </div>
       </div>
     </section>
