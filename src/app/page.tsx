@@ -158,8 +158,7 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
  {
-    message: "Dear Students,
-The guidelines for SIP Report Submission will be shared with you within a week. In the meantime, kindly continue your preparations as per the format already provided.",
+    message: "The guidelines for SIP Report Submission will be shared with you within a week. In the meantime, kindly continue your preparations as per the format already provided.",
     timestamp: "11 Sept 2025",
   },
   {
