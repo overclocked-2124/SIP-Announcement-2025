@@ -158,6 +158,11 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
 {
+    message: "Press on this to access timetable and section list for C and P cycle students updated as of 13 Sept 2025.",
+    timestamp: "13 Sept 2025",
+    link: "https://drive.google.com/drive/folders/1dncMKlqPBAVWpk2fZMVNgtBoFQrYU3cm",
+  },
+{
     message: "Dear Students, as per the timetable, there will be no classes scheduled on Saturday, 13th September 2025",
     timestamp: "12 Sept 2025",
   },
@@ -165,11 +170,7 @@ const notifications: NotificationItem[] = [
     message: "The guidelines for SIP Report Submission will be shared with you within a week. In the meantime, kindly continue your preparations as per the format already provided.",
     timestamp: "11 Sept 2025",
   },
-  {
-    message: "Press on this to access timetable and section list for C and P cycle students updated as of 10 Sept 2025.",
-    timestamp: "10 Sept 2025",
-    link: "https://drive.google.com/drive/folders/1dncMKlqPBAVWpk2fZMVNgtBoFQrYU3cm",
-  },
+  
   {
     message: "Please find the photographs from the Student Induction Program at the link below. You may use these images while preparing the SIP report.",
     timestamp: "9 Sept 2025",
