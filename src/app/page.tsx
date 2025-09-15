@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -158,8 +159,8 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 
 const notifications: NotificationItem[] = [
 {
-    message: "Press on this to access timetable and section list for C and P cycle students updated as of 13 Sept 2025.",
-    timestamp: "13 Sept 2025",
+    message: "Press on this to access timetable and section list for C and P cycle students updated as of 15 Sept 2025.",
+    timestamp: "15 Sept 2025",
     link: "https://drive.google.com/drive/folders/1dncMKlqPBAVWpk2fZMVNgtBoFQrYU3cm",
   },
 {
