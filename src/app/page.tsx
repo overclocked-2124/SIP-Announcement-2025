@@ -27,31 +27,40 @@ type NotificationItem = {
 
 const announcements: Announcement[] = [
   {
-    title: "Highlights of Team building activities",
-    date: "3 Sept 2025",
-    driveShare: "https://drive.google.com/file/d/167R_m0qVdNLPmVMHMHOq5qZIQh8g-o6P/view?usp=drivesdk",
-    type: "video",
-    isHighlighted: true,
+    title: "First Year Counsellors List",
+    date: "19 Sept 2025", 
+    driveShare: "https://drive.google.com/file/d/1McrlC2D3TluZGmYh-1bdPthZLjyWkept/view?usp=drive_link",
+    type: "counselors",
+    isHighlighted: true
   },
   {
-    title: "Student Induction Programme Schedule",
-    date: "26 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1eNDGeVce48Oox_tf2iP4HerWmwn_LbDO/view?usp=sharing",
-    type: "schedule"
+    title: "First year PHY Time table",
+    date: "19 Sept 2025", 
+    driveShare: "https://drive.google.com/file/d/1SucncAYYdqLcSbXEyNBidEBttJHnGokP/view?usp=drive_link",
+    type: "schedule",
+    isHighlighted: true
   },
   {
-    title: "Counselor Details",
-    date: "22 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1bCdyhgxVHRz7ZXdmSe37NzcWo2MEnmCl/view?usp=sharing",
-    type: "counselors"
+    title: "First semester CHY Time Table",
+    date: "19 Sept 2025", 
+    driveShare: "https://drive.google.com/file/d/1VLa_h_P5xkboOblBqYE8SGNPo8OrHUh6/view?usp=drive_link",
+    type: "schedule",
+    isHighlighted: true
   },
   {
-    title: "Key Executives & Councellors",
-    date: "22 Aug 2025",
-    driveShare: "https://drive.google.com/file/d/1dGkgwG8B-tIu-EsVpclP7exWNARNH-C6/view?usp=drive_link",
-    type: "counselors"
+    title: "Counselors Information for 2025-26 Batch",
+    date: "19 Sept 2025", 
+    driveShare: "https://drive.google.com/file/d/15VNhTv1kx6SoUqr0ofcmUHLmBpMU-JvX/view?usp=drive_link",
+    type: "counselors",
+    isHighlighted: true
   },
-  
+  {
+    title: "1 SEM SECTION WISE LIST 2025 - 26 (18.09.2025)",
+    date: "19 Sept 2025", 
+    driveShare: "https://drive.google.com/file/d/1r6aN3Cy4ycNvjVG-ZqwisO5M40nAmgMe/view?usp=drive_link",
+    type: "venues",
+    isHighlighted: true
+  },
   {
     title: "Coding Resources (Bootkit)",
     date: "22 Aug 2025", 
@@ -158,25 +167,6 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
 };
 
 const notifications: NotificationItem[] = [
-{
-    message: "Press on this to access timetable and section list for C and P cycle students updated as of 17 Sept 2025.",
-    timestamp: "17 Sept 2025",
-    link: "https://drive.google.com/drive/folders/1dncMKlqPBAVWpk2fZMVNgtBoFQrYU3cm",
-  },
-{
-    message: "Dear Students, as per the timetable, there will be no classes scheduled on Saturday, 13th September 2025",
-    timestamp: "12 Sept 2025",
-  },
- {
-    message: "The guidelines for SIP Report Submission will be shared with you within a week. In the meantime, kindly continue your preparations as per the format already provided.",
-    timestamp: "11 Sept 2025",
-  },
-  
-  {
-    message: "Please find the photographs from the Student Induction Program at the link below. You may use these images while preparing the SIP report.",
-    timestamp: "9 Sept 2025",
-    link: "https://drive.google.com/drive/folders/1t8lPMUKAzN_YWdC5DDO0ALcLVbkP0aA2",
-  },
 ];
 
 const NotificationsPanel = () => {
