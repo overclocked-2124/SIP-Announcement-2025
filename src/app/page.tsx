@@ -27,39 +27,48 @@ type NotificationItem = {
 
 const announcements: Announcement[] = [
   {
+    title: "Technical Clubs PPT",
+    date: "27 Sept 2025", 
+    driveShare: "https://www.canva.com/design/DAGwWi4xF94/v-M1hdke_6rrFC_5cag3gQ/edit?utm_content=DAGwWi4xF94&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    type: "clubs",
+    isHighlighted: true
+  },
+  {
+    title: "Non-Technical Clubs PPT",
+    date: "27 Sept 2025", 
+    driveShare: "https://www.canva.com/design/DAGwgtSTF4I/0x-9Olo5FjIf8Cqndri76g/edit?utm_content=DAGwgtSTF4I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    type: "clubs",
+    isHighlighted: true
+  },
+  {
     title: "First Year Counsellors List",
     date: "19 Sept 2025", 
     driveShare: "https://drive.google.com/file/d/1McrlC2D3TluZGmYh-1bdPthZLjyWkept/view?usp=drive_link",
-    type: "counselors",
-    isHighlighted: true
+    type: "counselors"
   },
   {
     title: "First year PHY Time table",
     date: "19 Sept 2025", 
     driveShare: "https://drive.google.com/file/d/1SucncAYYdqLcSbXEyNBidEBttJHnGokP/view?usp=drive_link",
-    type: "schedule",
-    isHighlighted: true
+    type: "schedule"
   },
   {
     title: "First semester CHY Time Table",
     date: "19 Sept 2025", 
     driveShare: "https://drive.google.com/file/d/1VLa_h_P5xkboOblBqYE8SGNPo8OrHUh6/view?usp=drive_link",
-    type: "schedule",
-    isHighlighted: true
+    type: "schedule"
   },
   {
     title: "Counselors Information for 2025-26 Batch",
     date: "19 Sept 2025", 
     driveShare: "https://drive.google.com/file/d/15VNhTv1kx6SoUqr0ofcmUHLmBpMU-JvX/view?usp=drive_link",
-    type: "counselors",
-    isHighlighted: true
+    type: "counselors"
   },
   {
     title: "1 SEM SECTION WISE LIST 2025 - 26 (18.09.2025)",
     date: "19 Sept 2025", 
     driveShare: "https://drive.google.com/file/d/1r6aN3Cy4ycNvjVG-ZqwisO5M40nAmgMe/view?usp=drive_link",
-    type: "venues",
-    isHighlighted: true
+    type: "venues"
   },
   {
     title: "Coding Resources (Bootkit)",
