@@ -166,7 +166,7 @@ const AnnouncementCard = ({ announcement }: { announcement: typeof announcements
             rel="noopener noreferrer"
             className={`inline-flex items-center font-medium group ${isHighlighted ? 'text-blue-600 hover:text-blue-800' : 'text-primary'}`}
           >
-            {announcement.type === 'sports' ? 'Apply' : (announcement.type === 'video' ? 'View Video' : (isHighlighted ? 'Submit Feedback' : 'View Details'))}
+            {announcement.type === 'sports' ? 'Apply' : (announcement.type === 'video' ? 'View Video' : (isHighlighted ? 'Check PPT' : 'View Details'))}
             <ArrowRight className={`ml-1 h-4 w-4 transition-transform group-hover:translate-x-1 ${isHighlighted ? 'text-blue-500' : ''}`} />
           </a>
         </div>
